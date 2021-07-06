@@ -1,3 +1,4 @@
+// transpose is nothing but swapping of row and column values
 const arr = [
   [0, 1, 2, 3],
   [4, 5, 6, 7],
