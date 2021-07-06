@@ -27,16 +27,21 @@ const printSpiral = (arr) => {
       console.log(arr[j][right]);
     }
     right--;
-    //print bottom row from right to left
-    for (let j = right; j >= left; j--) {
-      console.log(arr[bottom][j]);
+    if (top <= bottom) {
+      //print bottom row from right to left
+      for (let j = right; j >= left; j--) {
+        console.log(arr[bottom][j]);
+      }
+      bottom--;
     }
-    bottom--;
-    //print left row from bottom to top
-    for (let j = bottom; j >= top; j--) {
-      console.log(arr[j][left]);
+
+    if (left <= right) {
+      //print left row from bottom to top
+      for (let j = bottom; j >= top; j--) {
+        console.log(arr[j][left]);
+      }
+      left++;
     }
-    left++;
   }
 };
 
